@@ -17,5 +17,5 @@ returns it in json format
 
 ## Example
 
-Request: curl -d "<hello>world</hello>" -X POST http://0.0.0.0:80/xml
-Answer: {"abdera":{"hello":"world"},"badgerfish":{"hello":{"$":"world"}},"cobra":{"hello":"world"},"gdata":{"hello":{"$t":"world"}},"parker":"world","yahoo":{"hello":"world"}}
+- Request: curl -d "<hello>world</hello>" -X POST http://0.0.0.0:80/xml
+- Answer: {"abdera":{"hello":"world"},"badgerfish":{"hello":{"$":"world"}},"cobra":{"hello":"world"},"gdata":{"hello":{"$t":"world"}},"parker":"world","yahoo":{"hello":"world"}}
