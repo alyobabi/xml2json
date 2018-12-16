@@ -1,0 +1,21 @@
+apply plugin: 'docker'
+
+buildscript {
+	repositories { jcenter() }
+	dependencies {
+		classpath 'se.transmode.gradle:gradle-docker:1.2'
+	}
+}
+
+docker {
+	baseImage "python:alpine3.8"
+}
+
+task createImage(type: Docker) {
+	applicationName = "myserver"
+	exposePort 80
+	addFile('appf.py', 'server/appf.py')
+	runCommand 'pip install flask'
+	runCommand 'pip install xmljson'
+	workingDir('server')
+}
