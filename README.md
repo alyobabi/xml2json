@@ -5,6 +5,8 @@ Server app based on microframework Flask
 This app waits for POST request on 0.0.0.0:80 with xml data and
 returns it in json format
 
+Documentation is in appf.html
+
 ## Usage
 - create image and then run:
 
