@@ -6,14 +6,16 @@ This app waits for POST request on 0.0.0.0:80 with xml data and
 returns it in json format
 
 ## Usage
+- create image and then run:
 
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml with 6 diffrent schemes
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml_abdera with abdera scheme
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml_badgerfish with badgerfish scheme 
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml_cobra with cobr scheme
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml_gdata with gdata scheme
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml_parker with parker scheme
-- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml_yahoo with yahoo scheme
+  `./gradlew createImage`
+  
+  `docker run -it -p 80:80 myserver python3 appf.py`
+
+  
+- send POST request with xml payload to transform data to json on 0.0.0.0:80/xml with 6 different schemes
+
+
 
 ## Example
 
