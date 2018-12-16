@@ -37,7 +37,7 @@ def xml2json():
 			'yahoo' : xmljson.yahoo.data(req_payload),									 
 				  })
 	if request.method == 'GET':
-		return '<h1>Send xml data on this adres to tranform it to json<h1>'
+		return '<h1>Send xml data on this address to tranform it to json<h1>'
 	return
 
 @app.route('/xml_abdera', methods = ['POST'])
