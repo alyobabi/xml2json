@@ -12,7 +12,7 @@ Documentation is in appf.html
 
   `./gradlew createImage`
   
-  `docker run -it -p 80:80 myserver python3 appf.py`
+  `docker run -p 80:80 myserver python3 appf.py`
 
   
 - send POST request with xml payload to transform data to json on 0.0.0.0:80/xml with 6 different schemes
