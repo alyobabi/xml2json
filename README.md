@@ -23,3 +23,7 @@ Documentation is in appf.html
 
 - Request: `curl -d "<hello>world</hello>" -X POST http://0.0.0.0:80/xml`
 - Answer: `{"abdera":{"hello":"world"},"badgerfish":{"hello":{"$":"world"}},"cobra":{"hello":"world"},"gdata":{"hello":{"$t":"world"}},"parker":"world","yahoo":{"hello":"world"}}`
+
+
+- Request: `curl -d @example.xml -X POST http://0.0.0.0:80/xml`
+- Answer: `{"abdera":{"note":{"children":[{"to":"Tove"},{"from":"Jani"},{"heading":"Reminder"},{"body":"Don't forget me this weekend!"}]}},"badgerfish":{"note":{"body":{"$":"Don't forget me this weekend!"},"from":{"$":"Jani"},"heading":{"$":"Reminder"},"to":{"$":"Tove"}}},"cobra":{"note":{"attributes":{},"children":[{"to":"Tove"},{"body":"Don't forget me this weekend!","from":"Jani","heading":"Reminder"}]}},"gdata":{"note":{"body":{"$t":"Don't forget me this weekend!"},"from":{"$t":"Jani"},"heading":{"$t":"Reminder"},"to":{"$t":"Tove"}}},"parker":{"body":"Don't forget me this weekend!","from":"Jani","heading":"Reminder","to":"Tove"},"yahoo":{"note":{"body":"Don't forget me this weekend!","from":"Jani","heading":"Reminder","to":"Tove"}}}`
